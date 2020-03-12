@@ -1,0 +1,54 @@
+{
+  "name": "taro-testing-library",
+  "version": "0.0.2",
+  "description": "Simple and complete taro.js testing utilities that encourage good testing practices.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "node ./build/build.js",
+    "commit": "npx git-cz",
+    "test": "jest --config test/unit/jest.config.js --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThoughtWorksChina/taro-testing-library.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThoughtWorksChina/taro-testing-library/issues"
+  },
+  "homepage": "https://github.com/ThoughtWorksChina/taro-testing-library#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.8.3",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@rollup/plugin-typescript": "^2.1.0",
+    "@tarojs/components": "^2.0.6",
+    "@tarojs/taro": "^2.0.6",
+    "@tarojs/taro-h5": "^2.0.6",
+    "@types/jest": "^24.0.18",
+    "babel-jest": "^25.1.0",
+    "commitlint": "^8.3.5",
+    "husky": "^4.2.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "nerv-create-class": "^1.5.6",
+    "nerv-test-utils": "^1.5.6",
+    "nervjs": "^1.5.6",
+    "rollup": "^1.23.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "rollup-plugin-uglify": "^6.0.3",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "nervjs": "^1.5.0"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^6.15.0"
+  }
+}
