@@ -42,7 +42,7 @@ export const render = (
     debug: (el = container) => {
       console.log(prettyDOM(el));
     },
-    container: container,
+    container,
     unmount: () => cleanupAtContainer({ target, component }),
     ...getQueriesForElement(target),
   };
