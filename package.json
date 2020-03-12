@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ThoughtWorksChina/taro-testing-library#readme",
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-transform-react-jsx": "^7.8.3",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-typescript": "^7.8.3",

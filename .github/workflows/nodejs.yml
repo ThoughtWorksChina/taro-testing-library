@@ -21,15 +21,15 @@ jobs:
         run: |
           npm install
           npm run build
-#          npm run test
+          npm run test
         env:
           CI: true
 #      - name: Upload coverage to Codecov
 #        uses: codecov/codecov-action@v1.0.2
 #        with:
 #          token: ${{secrets.CODECOV_TOKEN}}
-#      - name: Release
-#        uses: codfish/semantic-release-action@master
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-#          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Release
+        uses: codfish/semantic-release-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

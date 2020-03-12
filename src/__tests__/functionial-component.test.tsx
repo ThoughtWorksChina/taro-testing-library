@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro';
 import { act, render } from '../index';
-import Counter from './functionial';
+import Counter from './functionial-component';
 
 describe('functionial component test', () => {
   it('should render componen', () => {
