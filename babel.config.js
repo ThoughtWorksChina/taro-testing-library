@@ -1,3 +1,5 @@
+const apis = require("@tarojs/taro-h5/dist/taroApis");
+
 module.exports = {
   presets: [
     [
@@ -17,5 +19,13 @@ module.exports = {
         pragma: "Nerv.createElement"
       }
     ],
+    ["@babel/plugin-proposal-object-rest-spread"],
+    [
+      "babel-plugin-transform-taroapi",
+      {
+        apis,
+        packageName: "@tarojs/taro-h5"
+      }
+    ]
   ]
 };

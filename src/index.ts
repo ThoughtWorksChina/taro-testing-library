@@ -33,7 +33,7 @@ export const render = (
     target = container.appendChild(document.createElement('div')),
   }: RenderOptions = {},
 ) => {
-  const component = taroRender(Component, target);
+  let component = taroRender(Component, target);
   mountedContainers.set(target, { target, component });
   return {
     get component() {
@@ -45,6 +45,11 @@ export const render = (
     container,
     unmount: () => cleanupAtContainer({ target, component }),
     ...getQueriesForElement(target),
+    rerender: (Component) => {
+      unmountComponentAtNode(target);
+      component = taroRender(Component, target);
+      mountedContainers.set(target, { target, component });
+    }
   };
 };
 

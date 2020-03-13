@@ -24,4 +24,11 @@ describe('functionial component test', () => {
     })
     expect($number.innerHTML).toEqual(`2`);
   });
+
+  it('should rerender when excute rerender methods', () => {
+    const { container, rerender } = render(<Counter />);
+    expect(container.querySelector('.number').innerHTML).toEqual("1");
+    rerender(<Counter initial={2} />)
+    expect(container.querySelector('.number').innerHTML).toEqual("2");
+  });
 });
