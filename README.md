@@ -67,7 +67,7 @@ const Counter = (props) => {
   const { initial = 1 } = props;
   const [count, setCount] = useState(initial)
   return (
-    <TextonClick={() => {setCount(count+1)}} className="number">
+    <Text onClick={() => {setCount(count+1)}} className="number">
       {count}
     </Text>
   );
