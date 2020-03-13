@@ -1,9 +1,9 @@
 import Taro from '@tarojs/taro';
 import { act, render } from '../index';
-import Counter from './functionial-component';
+import Counter from './functional-component';
 
-describe('functionial component test', () => {
-  it('should render componen', () => {
+describe('functional component test', () => {
+  it('should render component', () => {
     const { container } = render(<Counter />);
     const $number = container.querySelector('.number') as Element;
     expect($number.innerHTML).toEqual('1');
