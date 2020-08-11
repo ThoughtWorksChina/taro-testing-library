@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test should pass snapshot 1`] = `
+<div>
+  <span
+    class="taro-text number custom-class"
+  >
+    1
+  </span>
+</div>
+`;

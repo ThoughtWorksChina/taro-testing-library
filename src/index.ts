@@ -46,6 +46,9 @@ export const render = (
     get component() {
       return component;
     },
+    get baseElement() {
+      return target
+    },
     debug: (el = container) => {
       console.log(prettyDOM(el));
     },
@@ -72,7 +75,7 @@ export function flush(fn?: () => void) {
     fn && fn();
     setTimeout(() => {
       resolve();
-    }, 10); // # TODO: tricky for useEffect
+    }, 10); // # TODO: tricky for Nerv.js useEffect
   });
 }
 
