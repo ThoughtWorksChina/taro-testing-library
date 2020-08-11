@@ -38,8 +38,6 @@ set `preset` in your jest config file
      
      default : `container.appendChild(document.createElement('div'))`
 
-* `renderToString(Component) => string`: export from [nerv-server](https://github.com/NervJS/nerv-server), you can use it to match snapshot
-
 #### Result
 * `container`: container
 * `component`: created Taro.js component
@@ -47,6 +45,10 @@ set `preset` in your jest config file
 * `unmount()`: method of unmount component
 * `debug()`: method of log current dom
 * `...queries`: Returns all [query functions](https://testing-library.com/docs/dom-testing-library/api-queries) that are binded to the target.
+
+
+### renderToString
+`renderToString(Component) => string`: export from [nerv-server](https://github.com/NervJS/nerv-server), you can use it to match snapshot
 
 ### cleanup
 Unmounts the component from the container and destroys the container.
