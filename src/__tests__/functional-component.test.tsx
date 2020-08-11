@@ -1,7 +1,7 @@
 import Taro, {useEffect, useState} from '@tarojs/taro';
 import {Text} from "@tarojs/components";
 import {StandardProps} from "@tarojs/components/types/common";
-import { act, render } from '../index';
+import { act, render, renderToString } from '../index';
 
 interface CounterProps extends StandardProps {
   initial?: number;
@@ -53,4 +53,9 @@ describe('functional component test', () => {
     rerender(<Counter initial={2} />)
     expect(container.querySelector('.number').innerHTML).toEqual("2");
   });
+
+  it('should support snapshot', () => {
+    const component = renderToString(<div>component without state</div>);
+    expect(component).toMatchSnapshot();
+  })
 });

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`functional component test should support snapshot 1`] = `"<div>component without state</div>"`;

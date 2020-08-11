@@ -38,6 +38,8 @@ set `preset` in your jest config file
      
      default : `container.appendChild(document.createElement('div'))`
 
+* `renderToString(Component) => string`: export from [nerv-server](https://github.com/NervJS/nerv-server), you can use it to match snapshot
+
 #### Result
 * `container`: container
 * `component`: created Taro.js component
@@ -94,4 +96,9 @@ test('should rerender when trigger setState hooks', () => {
   })
   expect($number.innerHTML).toEqual(`2`);
 });
+
+it('should support snapshot', () => {
+  const component = renderToString(<div>component without state</div>);
+  expect(component).toMatchSnapshot();
+})
 ```

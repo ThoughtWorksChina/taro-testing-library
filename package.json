@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "@testing-library/dom": "^6.15.0",
-    "identity-obj-proxy": "^3.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "nerv-server": "^1.5.7"
   }
 }

@@ -1,5 +1,7 @@
 import { getQueriesForElement, prettyDOM } from '@testing-library/dom';
 import Nerv, { unmountComponentAtNode, render as taroRender } from 'nervjs';
+export { renderToString } from 'nerv-server';
+
 global.Nerv = Nerv;
 
 export * from '@testing-library/dom';
