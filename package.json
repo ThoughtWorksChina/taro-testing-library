@@ -1,6 +1,6 @@
 {
   "name": "taro-testing-library",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Simple and complete taro.js testing utilities that encourage good testing practices.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
