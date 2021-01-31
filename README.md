@@ -15,6 +15,21 @@ yarn add taro-testing-library -D
 npm install taro-testing-library -D
 ```
 
+### for Taro 3.x
+
+For Taro 3.x and React, can use [react-testing-library](https://github.com/testing-library/react-testing-library) directly. 
+
+the only need is to configure `moduleNameMapper` in  `jest.config.js` like this.
+
+```js
+{
+  moduleNameMapper: {
+    '@tarojs/components': '@tarojs/components/dist-h5/react',
+    ...
+  },
+}
+```
+
 
 ## Usage
 set `preset` in your jest config file
