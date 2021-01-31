@@ -15,7 +15,7 @@ yarn add taro-testing-library -D
 npm install taro-testing-library -D
 ```
 
-### for Taro 3.x
+### For Taro 3.x
 
 For Taro 3.x and React, can use [react-testing-library](https://github.com/testing-library/react-testing-library) directly. 
 
